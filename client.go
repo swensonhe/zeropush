@@ -77,7 +77,7 @@ func (zr *ZeroResponse) GetHeader(key string) string {
 
 func NewClient() *Client {
 	var auth_token string
-	if os.Getenv("ENV") == "production" {
+	if os.Getenv("ENV") == "production" || os.Getenv("ENV") == "prd" {
 		auth_token = os.Getenv("ZEROPUSH_PROD_TOKEN")
 	} else {
 		auth_token = os.Getenv("ZEROPUSH_DEV_TOKEN")

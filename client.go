@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	BASE_URL = "https://api.zeropush.com"
+	BASE_URL = "https://zeropush.pushwoosh.com"
 )
 
 type Client struct {
